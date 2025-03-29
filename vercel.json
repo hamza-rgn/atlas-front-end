@@ -1,31 +1,6 @@
 {
-    "routes": [
-      {
-        "src": "/",
-        "dest": "/"
-      },
-      {
-        "src": "/login",
-        "dest": "/login"
-      },
-      {
-        "src": "/landingpage",
-        "dest": "/landingpage"
-      }
-      ,
-      {
-        "src": "/skills",
-        "dest": "/"
-      }
-      ,
-      {
-        "src": "/contact",
-        "dest": "/"
-      }
-      ,
-      {
-        "src": "/details",
-        "dest": "/"
-}
-]
-}
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/index.html" }
+    ]
+  }
+  
