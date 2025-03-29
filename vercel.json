@@ -1,22 +1,31 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/static-build",
-        "config": { "distDir": "build" }
-      }
-    ],
     "routes": [
       {
-        "src": "/(.*)",
-        "dest": "/build/index.html"
-      }
-    ],
-    "rewrites": [
+        "src": "/",
+        "dest": "/"
+      },
       {
-        "source": "/(.*)",
-        "destination": "/build/index.html"
+        "src": "/login",
+        "dest": "/login"
+      },
+      {
+        "src": "/landingpage",
+        "dest": "/landingpage"
       }
-    ]
-  }
+      ,
+      {
+        "src": "/skills",
+        "dest": "/"
+      }
+      ,
+      {
+        "src": "/contact",
+        "dest": "/"
+      }
+      ,
+      {
+        "src": "/details",
+        "dest": "/"
+}
+]
+}
