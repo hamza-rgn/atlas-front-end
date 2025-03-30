@@ -6,6 +6,7 @@ import axios from 'axios';
 // Configure axios instance
 const api = axios.create({
   baseURL: 'https://atlas-back-end-seven.vercel.app/api', // Your backend base URL
+  withCredentials: true,
 });
 
 // Add request interceptor
